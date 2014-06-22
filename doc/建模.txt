@@ -1,0 +1,18 @@
+Task	主任务
+	cmd - TextField
+	state - 状态:empty init running success/failed
+	create_time
+
+	
+SubTask
+	master_id
+	state - 状态:empty init running success/failed
+	start_time
+	end_time
+	host_id
+	
+Host
+	hostname
+	user
+	tags
+	last_active

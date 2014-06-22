@@ -1,0 +1,4 @@
+deployclient/.idea/
+deployclient/log/*
+deployserver/.idea/
+*.pyc

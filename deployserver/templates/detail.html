@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ host.hostname }}监控详情</title>
+    {% include "header.html" %}
+</head>
+<body>
+{% include "nav.html" with nav_active="detail"%}
+<div class="container">
+    <div>
+        <h1>{{ host.hostname }} <small class="h5">最后更新：{{ modify_time|date:"Y-m-d H:i" }}</small></h1>
+    </div>
+    <div>
+        <h2>负载</h2>
+        <p>一/五/十五分钟：{{ health_info.load.lavg_1 }} / {{ health_info.load.lavg_5 }} / {{ health_info.load.lavg_15 }}</p>
+    </div>
+    <div>
+        <h2>内存</h2>
+        <p>
+            使用/总内存：{{ health_info.memory.MemUsed }}MB / {{ health_info.memory.MemTotal }} MB
+        </p>
+    </div>
+    <div>
+        <h2>进程</h2>
+        <p>
+            <pre>{{ health_info.ps.data }}</pre>
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

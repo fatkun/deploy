@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>监控 - 登陆  </title>
+    {% include "header.html" %}
+</head>
+<body>
+{% include "nav.html" %}
+<div class="container">
+    <form method="post" action="?login=1" class="form-horizontal">
+        <label for="password">密码:</label> <input id="password" type="text" name="password"/> <input type="submit" value="登陆" />
+    </form>
+</div>
+</body>
+</html>

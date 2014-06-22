@@ -1,0 +1,186 @@
+DEBUG 2014-06-22 16:57:57,785 util 9884 9868 (0.002) SELECT `deploy_host`.`id`, `deploy_host`.`hostname`, `deploy_host`.`username`, `deploy_host`.`version`, `deploy_host`.`tags`, `deploy_host`.`create_time` FROM `deploy_host` WHERE (`deploy_host`.`username` = fatkun  AND `deploy_host`.`hostname` = fatkun-pc ); args=(u'fatkun', u'fatkun-pc')
+DEBUG 2014-06-22 16:57:57,789 util 9884 9868 (0.002) SELECT (1) AS `a` FROM `deploy_host` WHERE `deploy_host`.`id` = 1  LIMIT 1; args=(1,)
+DEBUG 2014-06-22 16:57:57,792 util 9884 9868 (0.001) UPDATE `deploy_host` SET `hostname` = fatkun-pc, `username` = fatkun, `version` = 1.0, `tags` = 汕头, `create_time` = 2014-06-22 15:59:24 WHERE `deploy_host`.`id` = 1 ; args=(u'fatkun-pc', u'fatkun', u'1.0', u'\u6c55\u5934', u'2014-06-22 15:59:24', 1)
+DEBUG 2014-06-22 16:57:59,295 util 9884 9868 (0.001) SELECT `deploy_host`.`id`, `deploy_host`.`hostname`, `deploy_host`.`username`, `deploy_host`.`version`, `deploy_host`.`tags`, `deploy_host`.`create_time` FROM `deploy_host` WHERE `deploy_host`.`id` = 1 ; args=(1,)
+DEBUG 2014-06-22 16:57:59,299 util 9884 9868 (0.001) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, load, {"lavg_5": "0.00", "lavg_15": "0.00", "lavg_1": "0.00"}, 2014-06-22 16:57:59); args=(1, u'load', u'{"lavg_5": "0.00", "lavg_15": "0.00", "lavg_1": "0.00"}', u'2014-06-22 16:57:59')
+DEBUG 2014-06-22 16:57:59,309 util 9884 9868 (0.002) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, memory, {"MemTotal": 8094, "Cached": 0, "SwapFree": 0, "LowTotal": 8094, "SwapTotal": 0, "MemFree": 4286, "HighTotal": 0, "Buffers": 0, "MemUsed": 3808, "HighFree": 0, "LowFree": 4286}, 2014-06-22 16:57:59); args=(1, u'memory', u'{"MemTotal": 8094, "Cached": 0, "SwapFree": 0, "LowTotal": 8094, "SwapTotal": 0, "MemFree": 4286, "HighTotal": 0, "Buffers": 0, "MemUsed": 3808, "HighFree": 0, "LowFree": 4286}', u'2014-06-22 16:57:59')
+DEBUG 2014-06-22 16:57:59,315 util 9884 9868 (0.001) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, ps, {"data": "      PID    PPID    PGID     WINPID   TTY     UID    STIME COMMAND\n     9160       1    9160       9160  ?       1001 16:57:58 /usr/bin/ps\n"}, 2014-06-22 16:57:59); args=(1, u'ps', u'{"data": "      PID    PPID    PGID     WINPID   TTY     UID    STIME COMMAND\\n     9160       1    9160       9160  ?       1001 16:57:58 /usr/bin/ps\\n"}', u'2014-06-22 16:57:59')
+DEBUG 2014-06-22 17:00:00,460 util 9884 9868 (0.002) SELECT `deploy_host`.`id`, `deploy_host`.`hostname`, `deploy_host`.`username`, `deploy_host`.`version`, `deploy_host`.`tags`, `deploy_host`.`create_time` FROM `deploy_host` WHERE `deploy_host`.`id` = 1 ; args=(1,)
+DEBUG 2014-06-22 17:00:00,463 util 9884 9868 (0.001) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, load, {"lavg_5": "0.00", "lavg_15": "0.00", "lavg_1": "0.00"}, 2014-06-22 17:00:00); args=(1, u'load', u'{"lavg_5": "0.00", "lavg_15": "0.00", "lavg_1": "0.00"}', u'2014-06-22 17:00:00')
+DEBUG 2014-06-22 17:00:00,470 util 9884 9868 (0.001) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, memory, {"MemTotal": 8094, "Cached": 0, "SwapFree": 0, "LowTotal": 8094, "SwapTotal": 0, "MemFree": 4351, "HighTotal": 0, "Buffers": 0, "MemUsed": 3743, "HighFree": 0, "LowFree": 4351}, 2014-06-22 17:00:00); args=(1, u'memory', u'{"MemTotal": 8094, "Cached": 0, "SwapFree": 0, "LowTotal": 8094, "SwapTotal": 0, "MemFree": 4351, "HighTotal": 0, "Buffers": 0, "MemUsed": 3743, "HighFree": 0, "LowFree": 4351}', u'2014-06-22 17:00:00')
+DEBUG 2014-06-22 17:00:00,476 util 9884 9868 (0.002) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, ps, {"data": "      PID    PPID    PGID     WINPID   TTY     UID    STIME COMMAND\n     4292       1    4292       4292  ?       1001 16:59:59 /usr/bin/ps\n"}, 2014-06-22 17:00:00); args=(1, u'ps', u'{"data": "      PID    PPID    PGID     WINPID   TTY     UID    STIME COMMAND\\n     4292       1    4292       4292  ?       1001 16:59:59 /usr/bin/ps\\n"}', u'2014-06-22 17:00:00')
+DEBUG 2014-06-22 17:02:01,634 util 9884 9868 (0.003) SELECT `deploy_host`.`id`, `deploy_host`.`hostname`, `deploy_host`.`username`, `deploy_host`.`version`, `deploy_host`.`tags`, `deploy_host`.`create_time` FROM `deploy_host` WHERE `deploy_host`.`id` = 1 ; args=(1,)
+DEBUG 2014-06-22 17:02:01,641 util 9884 9868 (0.003) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, load, {"lavg_5": "0.00", "lavg_15": "0.00", "lavg_1": "0.00"}, 2014-06-22 17:02:01); args=(1, u'load', u'{"lavg_5": "0.00", "lavg_15": "0.00", "lavg_1": "0.00"}', u'2014-06-22 17:02:01')
+DEBUG 2014-06-22 17:02:01,657 util 9884 9868 (0.002) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, memory, {"MemTotal": 8094, "Cached": 0, "SwapFree": 0, "LowTotal": 8094, "SwapTotal": 0, "MemFree": 4242, "HighTotal": 0, "Buffers": 0, "MemUsed": 3852, "HighFree": 0, "LowFree": 4242}, 2014-06-22 17:02:01); args=(1, u'memory', u'{"MemTotal": 8094, "Cached": 0, "SwapFree": 0, "LowTotal": 8094, "SwapTotal": 0, "MemFree": 4242, "HighTotal": 0, "Buffers": 0, "MemUsed": 3852, "HighFree": 0, "LowFree": 4242}', u'2014-06-22 17:02:01')
+DEBUG 2014-06-22 17:02:01,664 util 9884 9868 (0.002) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, ps, {"data": "      PID    PPID    PGID     WINPID   TTY     UID    STIME COMMAND\n     9528       1    9528       9528  ?       1001 17:02:00 /usr/bin/ps\n"}, 2014-06-22 17:02:01); args=(1, u'ps', u'{"data": "      PID    PPID    PGID     WINPID   TTY     UID    STIME COMMAND\\n     9528       1    9528       9528  ?       1001 17:02:00 /usr/bin/ps\\n"}', u'2014-06-22 17:02:01')
+DEBUG 2014-06-22 17:04:02,818 util 9884 9868 (0.001) SELECT `deploy_host`.`id`, `deploy_host`.`hostname`, `deploy_host`.`username`, `deploy_host`.`version`, `deploy_host`.`tags`, `deploy_host`.`create_time` FROM `deploy_host` WHERE `deploy_host`.`id` = 1 ; args=(1,)
+DEBUG 2014-06-22 17:04:02,819 util 9884 9868 (0.001) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, load, {"lavg_5": "0.00", "lavg_15": "0.00", "lavg_1": "0.00"}, 2014-06-22 17:04:02); args=(1, u'load', u'{"lavg_5": "0.00", "lavg_15": "0.00", "lavg_1": "0.00"}', u'2014-06-22 17:04:02')
+DEBUG 2014-06-22 17:04:02,825 util 9884 9868 (0.001) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, memory, {"MemTotal": 8094, "Cached": 0, "SwapFree": 0, "LowTotal": 8094, "SwapTotal": 0, "MemFree": 4190, "HighTotal": 0, "Buffers": 0, "MemUsed": 3904, "HighFree": 0, "LowFree": 4190}, 2014-06-22 17:04:02); args=(1, u'memory', u'{"MemTotal": 8094, "Cached": 0, "SwapFree": 0, "LowTotal": 8094, "SwapTotal": 0, "MemFree": 4190, "HighTotal": 0, "Buffers": 0, "MemUsed": 3904, "HighFree": 0, "LowFree": 4190}', u'2014-06-22 17:04:02')
+DEBUG 2014-06-22 17:04:02,828 util 9884 9868 (0.000) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, ps, {"data": "      PID    PPID    PGID     WINPID   TTY     UID    STIME COMMAND\n     9340       1    9340       9340  ?       1001 17:04:01 /usr/bin/ps\n"}, 2014-06-22 17:04:02); args=(1, u'ps', u'{"data": "      PID    PPID    PGID     WINPID   TTY     UID    STIME COMMAND\\n     9340       1    9340       9340  ?       1001 17:04:01 /usr/bin/ps\\n"}', u'2014-06-22 17:04:02')
+DEBUG 2014-06-22 17:06:03,982 util 9884 9868 (0.000) SELECT `deploy_host`.`id`, `deploy_host`.`hostname`, `deploy_host`.`username`, `deploy_host`.`version`, `deploy_host`.`tags`, `deploy_host`.`create_time` FROM `deploy_host` WHERE `deploy_host`.`id` = 1 ; args=(1,)
+DEBUG 2014-06-22 17:06:03,983 util 9884 9868 (0.001) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, load, {"lavg_5": "0.00", "lavg_15": "0.00", "lavg_1": "0.00"}, 2014-06-22 17:06:03); args=(1, u'load', u'{"lavg_5": "0.00", "lavg_15": "0.00", "lavg_1": "0.00"}', u'2014-06-22 17:06:03')
+DEBUG 2014-06-22 17:06:03,990 util 9884 9868 (0.000) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, memory, {"MemTotal": 8094, "Cached": 0, "SwapFree": 0, "LowTotal": 8094, "SwapTotal": 0, "MemFree": 4147, "HighTotal": 0, "Buffers": 0, "MemUsed": 3947, "HighFree": 0, "LowFree": 4147}, 2014-06-22 17:06:03); args=(1, u'memory', u'{"MemTotal": 8094, "Cached": 0, "SwapFree": 0, "LowTotal": 8094, "SwapTotal": 0, "MemFree": 4147, "HighTotal": 0, "Buffers": 0, "MemUsed": 3947, "HighFree": 0, "LowFree": 4147}', u'2014-06-22 17:06:03')
+DEBUG 2014-06-22 17:06:03,993 util 9884 9868 (0.001) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, ps, {"data": "      PID    PPID    PGID     WINPID   TTY     UID    STIME COMMAND\n    10100       1   10100      10100  ?       1001 17:06:02 /usr/bin/ps\n"}, 2014-06-22 17:06:03); args=(1, u'ps', u'{"data": "      PID    PPID    PGID     WINPID   TTY     UID    STIME COMMAND\\n    10100       1   10100      10100  ?       1001 17:06:02 /usr/bin/ps\\n"}', u'2014-06-22 17:06:03')
+DEBUG 2014-06-22 17:08:05,142 util 9884 9868 (0.002) SELECT `deploy_host`.`id`, `deploy_host`.`hostname`, `deploy_host`.`username`, `deploy_host`.`version`, `deploy_host`.`tags`, `deploy_host`.`create_time` FROM `deploy_host` WHERE `deploy_host`.`id` = 1 ; args=(1,)
+DEBUG 2014-06-22 17:08:05,147 util 9884 9868 (0.002) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, load, {"lavg_5": "0.00", "lavg_15": "0.00", "lavg_1": "0.00"}, 2014-06-22 17:08:05); args=(1, u'load', u'{"lavg_5": "0.00", "lavg_15": "0.00", "lavg_1": "0.00"}', u'2014-06-22 17:08:05')
+DEBUG 2014-06-22 17:08:05,161 util 9884 9868 (0.003) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, memory, {"MemTotal": 8094, "Cached": 0, "SwapFree": 0, "LowTotal": 8094, "SwapTotal": 0, "MemFree": 4107, "HighTotal": 0, "Buffers": 0, "MemUsed": 3987, "HighFree": 0, "LowFree": 4107}, 2014-06-22 17:08:05); args=(1, u'memory', u'{"MemTotal": 8094, "Cached": 0, "SwapFree": 0, "LowTotal": 8094, "SwapTotal": 0, "MemFree": 4107, "HighTotal": 0, "Buffers": 0, "MemUsed": 3987, "HighFree": 0, "LowFree": 4107}', u'2014-06-22 17:08:05')
+DEBUG 2014-06-22 17:08:05,170 util 9884 9868 (0.002) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, ps, {"data": "      PID    PPID    PGID     WINPID   TTY     UID    STIME COMMAND\n     9584       1    9584       9584  ?       1001 17:08:04 /usr/bin/ps\n"}, 2014-06-22 17:08:05); args=(1, u'ps', u'{"data": "      PID    PPID    PGID     WINPID   TTY     UID    STIME COMMAND\\n     9584       1    9584       9584  ?       1001 17:08:04 /usr/bin/ps\\n"}', u'2014-06-22 17:08:05')
+DEBUG 2014-06-22 17:10:06,342 util 9884 9868 (0.001) SELECT `deploy_host`.`id`, `deploy_host`.`hostname`, `deploy_host`.`username`, `deploy_host`.`version`, `deploy_host`.`tags`, `deploy_host`.`create_time` FROM `deploy_host` WHERE `deploy_host`.`id` = 1 ; args=(1,)
+DEBUG 2014-06-22 17:10:06,345 util 9884 9868 (0.001) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, load, {"lavg_5": "0.00", "lavg_15": "0.00", "lavg_1": "0.00"}, 2014-06-22 17:10:06); args=(1, u'load', u'{"lavg_5": "0.00", "lavg_15": "0.00", "lavg_1": "0.00"}', u'2014-06-22 17:10:06')
+DEBUG 2014-06-22 17:10:06,354 util 9884 9868 (0.001) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, memory, {"MemTotal": 8094, "Cached": 0, "SwapFree": 0, "LowTotal": 8094, "SwapTotal": 0, "MemFree": 4233, "HighTotal": 0, "Buffers": 0, "MemUsed": 3861, "HighFree": 0, "LowFree": 4233}, 2014-06-22 17:10:06); args=(1, u'memory', u'{"MemTotal": 8094, "Cached": 0, "SwapFree": 0, "LowTotal": 8094, "SwapTotal": 0, "MemFree": 4233, "HighTotal": 0, "Buffers": 0, "MemUsed": 3861, "HighFree": 0, "LowFree": 4233}', u'2014-06-22 17:10:06')
+DEBUG 2014-06-22 17:10:06,358 util 9884 9868 (0.001) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, ps, {"data": "      PID    PPID    PGID     WINPID   TTY     UID    STIME COMMAND\n     9224       1    9224       9224  ?       1001 17:10:05 /usr/bin/ps\n"}, 2014-06-22 17:10:06); args=(1, u'ps', u'{"data": "      PID    PPID    PGID     WINPID   TTY     UID    STIME COMMAND\\n     9224       1    9224       9224  ?       1001 17:10:05 /usr/bin/ps\\n"}', u'2014-06-22 17:10:06')
+DEBUG 2014-06-22 17:10:43,602 util 9884 9868 (0.001) SELECT `deploy_host`.`id`, `deploy_host`.`hostname`, `deploy_host`.`username`, `deploy_host`.`version`, `deploy_host`.`tags`, `deploy_host`.`create_time` FROM `deploy_host` WHERE `deploy_host`.`id` = 1 ; args=(1,)
+DEBUG 2014-06-22 17:10:43,608 util 9884 9868 (0.004) SELECT `deploy_health`.`id`, `deploy_health`.`host_id`, `deploy_health`.`type`, `deploy_health`.`data`, `deploy_health`.`modify_time` FROM `deploy_health` WHERE (`deploy_health`.`type` = load  AND `deploy_health`.`host_id` = 1 ) ORDER BY `deploy_health`.`modify_time` DESC LIMIT 1; args=('load', 1)
+DEBUG 2014-06-22 17:10:43,615 util 9884 9868 (0.003) SELECT `deploy_health`.`id`, `deploy_health`.`host_id`, `deploy_health`.`type`, `deploy_health`.`data`, `deploy_health`.`modify_time` FROM `deploy_health` WHERE (`deploy_health`.`type` = memory  AND `deploy_health`.`host_id` = 1 ) ORDER BY `deploy_health`.`modify_time` DESC LIMIT 1; args=('memory', 1)
+DEBUG 2014-06-22 17:10:43,621 util 9884 9868 (0.004) SELECT `deploy_health`.`id`, `deploy_health`.`host_id`, `deploy_health`.`type`, `deploy_health`.`data`, `deploy_health`.`modify_time` FROM `deploy_health` WHERE (`deploy_health`.`type` = ps  AND `deploy_health`.`host_id` = 1 ) ORDER BY `deploy_health`.`modify_time` DESC LIMIT 1; args=('ps', 1)
+DEBUG 2014-06-22 17:10:47,456 util 9884 9868 (0.002) SELECT `deploy_host`.`id`, `deploy_host`.`hostname`, `deploy_host`.`username`, `deploy_host`.`version`, `deploy_host`.`tags`, `deploy_host`.`create_time` FROM `deploy_host` WHERE `deploy_host`.`id` = 1 ; args=(1,)
+DEBUG 2014-06-22 17:10:47,463 util 9884 9868 (0.005) SELECT `deploy_health`.`id`, `deploy_health`.`host_id`, `deploy_health`.`type`, `deploy_health`.`data`, `deploy_health`.`modify_time` FROM `deploy_health` WHERE (`deploy_health`.`type` = load  AND `deploy_health`.`host_id` = 1 ) ORDER BY `deploy_health`.`modify_time` DESC LIMIT 1; args=('load', 1)
+DEBUG 2014-06-22 17:10:47,469 util 9884 9868 (0.003) SELECT `deploy_health`.`id`, `deploy_health`.`host_id`, `deploy_health`.`type`, `deploy_health`.`data`, `deploy_health`.`modify_time` FROM `deploy_health` WHERE (`deploy_health`.`type` = memory  AND `deploy_health`.`host_id` = 1 ) ORDER BY `deploy_health`.`modify_time` DESC LIMIT 1; args=('memory', 1)
+DEBUG 2014-06-22 17:10:47,474 util 9884 9868 (0.004) SELECT `deploy_health`.`id`, `deploy_health`.`host_id`, `deploy_health`.`type`, `deploy_health`.`data`, `deploy_health`.`modify_time` FROM `deploy_health` WHERE (`deploy_health`.`type` = ps  AND `deploy_health`.`host_id` = 1 ) ORDER BY `deploy_health`.`modify_time` DESC LIMIT 1; args=('ps', 1)
+DEBUG 2014-06-22 17:10:52,697 util 9884 9868 (0.001) SELECT `deploy_host`.`id`, `deploy_host`.`hostname`, `deploy_host`.`username`, `deploy_host`.`version`, `deploy_host`.`tags`, `deploy_host`.`create_time` FROM `deploy_host`; args=()
+DEBUG 2014-06-22 17:10:54,058 util 9884 9868 (0.001) SELECT `deploy_host`.`id`, `deploy_host`.`hostname`, `deploy_host`.`username`, `deploy_host`.`version`, `deploy_host`.`tags`, `deploy_host`.`create_time` FROM `deploy_host` WHERE `deploy_host`.`id` = 4 ; args=(4,)
+DEBUG 2014-06-22 17:10:54,061 util 9884 9868 (0.001) SELECT `deploy_health`.`id`, `deploy_health`.`host_id`, `deploy_health`.`type`, `deploy_health`.`data`, `deploy_health`.`modify_time` FROM `deploy_health` WHERE (`deploy_health`.`type` = load  AND `deploy_health`.`host_id` = 4 ) ORDER BY `deploy_health`.`modify_time` DESC LIMIT 1; args=('load', 4)
+DEBUG 2014-06-22 17:10:54,063 util 9884 9868 (0.001) SELECT `deploy_health`.`id`, `deploy_health`.`host_id`, `deploy_health`.`type`, `deploy_health`.`data`, `deploy_health`.`modify_time` FROM `deploy_health` WHERE (`deploy_health`.`type` = memory  AND `deploy_health`.`host_id` = 4 ) ORDER BY `deploy_health`.`modify_time` DESC LIMIT 1; args=('memory', 4)
+DEBUG 2014-06-22 17:10:54,066 util 9884 9868 (0.000) SELECT `deploy_health`.`id`, `deploy_health`.`host_id`, `deploy_health`.`type`, `deploy_health`.`data`, `deploy_health`.`modify_time` FROM `deploy_health` WHERE (`deploy_health`.`type` = ps  AND `deploy_health`.`host_id` = 4 ) ORDER BY `deploy_health`.`modify_time` DESC LIMIT 1; args=('ps', 4)
+DEBUG 2014-06-22 17:10:55,612 util 9884 9868 (0.001) SELECT `deploy_host`.`id`, `deploy_host`.`hostname`, `deploy_host`.`username`, `deploy_host`.`version`, `deploy_host`.`tags`, `deploy_host`.`create_time` FROM `deploy_host`; args=()
+DEBUG 2014-06-22 17:10:56,236 util 9884 9868 (0.001) SELECT `deploy_host`.`id`, `deploy_host`.`hostname`, `deploy_host`.`username`, `deploy_host`.`version`, `deploy_host`.`tags`, `deploy_host`.`create_time` FROM `deploy_host` WHERE `deploy_host`.`id` = 1 ; args=(1,)
+DEBUG 2014-06-22 17:10:56,243 util 9884 9868 (0.004) SELECT `deploy_health`.`id`, `deploy_health`.`host_id`, `deploy_health`.`type`, `deploy_health`.`data`, `deploy_health`.`modify_time` FROM `deploy_health` WHERE (`deploy_health`.`type` = load  AND `deploy_health`.`host_id` = 1 ) ORDER BY `deploy_health`.`modify_time` DESC LIMIT 1; args=('load', 1)
+DEBUG 2014-06-22 17:10:56,250 util 9884 9868 (0.004) SELECT `deploy_health`.`id`, `deploy_health`.`host_id`, `deploy_health`.`type`, `deploy_health`.`data`, `deploy_health`.`modify_time` FROM `deploy_health` WHERE (`deploy_health`.`type` = memory  AND `deploy_health`.`host_id` = 1 ) ORDER BY `deploy_health`.`modify_time` DESC LIMIT 1; args=('memory', 1)
+DEBUG 2014-06-22 17:10:56,257 util 9884 9868 (0.005) SELECT `deploy_health`.`id`, `deploy_health`.`host_id`, `deploy_health`.`type`, `deploy_health`.`data`, `deploy_health`.`modify_time` FROM `deploy_health` WHERE (`deploy_health`.`type` = ps  AND `deploy_health`.`host_id` = 1 ) ORDER BY `deploy_health`.`modify_time` DESC LIMIT 1; args=('ps', 1)
+DEBUG 2014-06-22 17:12:07,513 util 9884 9868 (0.001) SELECT `deploy_host`.`id`, `deploy_host`.`hostname`, `deploy_host`.`username`, `deploy_host`.`version`, `deploy_host`.`tags`, `deploy_host`.`create_time` FROM `deploy_host` WHERE `deploy_host`.`id` = 1 ; args=(1,)
+DEBUG 2014-06-22 17:12:07,516 util 9884 9868 (0.001) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, load, {"lavg_5": "0.00", "lavg_15": "0.00", "lavg_1": "0.00"}, 2014-06-22 17:12:07); args=(1, u'load', u'{"lavg_5": "0.00", "lavg_15": "0.00", "lavg_1": "0.00"}', u'2014-06-22 17:12:07')
+DEBUG 2014-06-22 17:12:07,528 util 9884 9868 (0.000) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, memory, {"MemTotal": 8094, "Cached": 0, "SwapFree": 0, "LowTotal": 8094, "SwapTotal": 0, "MemFree": 4244, "HighTotal": 0, "Buffers": 0, "MemUsed": 3850, "HighFree": 0, "LowFree": 4244}, 2014-06-22 17:12:07); args=(1, u'memory', u'{"MemTotal": 8094, "Cached": 0, "SwapFree": 0, "LowTotal": 8094, "SwapTotal": 0, "MemFree": 4244, "HighTotal": 0, "Buffers": 0, "MemUsed": 3850, "HighFree": 0, "LowFree": 4244}', u'2014-06-22 17:12:07')
+DEBUG 2014-06-22 17:12:07,535 util 9884 9868 (0.002) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, ps, {"data": "      PID    PPID    PGID     WINPID   TTY     UID    STIME COMMAND\n     8572       1    8572       8572  ?       1001 17:12:06 /usr/bin/ps\n"}, 2014-06-22 17:12:07); args=(1, u'ps', u'{"data": "      PID    PPID    PGID     WINPID   TTY     UID    STIME COMMAND\\n     8572       1    8572       8572  ?       1001 17:12:06 /usr/bin/ps\\n"}', u'2014-06-22 17:12:07')
+DEBUG 2014-06-22 17:14:08,700 util 9884 9868 (0.001) SELECT `deploy_host`.`id`, `deploy_host`.`hostname`, `deploy_host`.`username`, `deploy_host`.`version`, `deploy_host`.`tags`, `deploy_host`.`create_time` FROM `deploy_host` WHERE `deploy_host`.`id` = 1 ; args=(1,)
+DEBUG 2014-06-22 17:14:08,704 util 9884 9868 (0.002) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, load, {"lavg_5": "0.00", "lavg_15": "0.00", "lavg_1": "0.00"}, 2014-06-22 17:14:08); args=(1, u'load', u'{"lavg_5": "0.00", "lavg_15": "0.00", "lavg_1": "0.00"}', u'2014-06-22 17:14:08')
+DEBUG 2014-06-22 17:14:08,713 util 9884 9868 (0.001) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, memory, {"MemTotal": 8094, "Cached": 0, "SwapFree": 0, "LowTotal": 8094, "SwapTotal": 0, "MemFree": 4181, "HighTotal": 0, "Buffers": 0, "MemUsed": 3913, "HighFree": 0, "LowFree": 4181}, 2014-06-22 17:14:08); args=(1, u'memory', u'{"MemTotal": 8094, "Cached": 0, "SwapFree": 0, "LowTotal": 8094, "SwapTotal": 0, "MemFree": 4181, "HighTotal": 0, "Buffers": 0, "MemUsed": 3913, "HighFree": 0, "LowFree": 4181}', u'2014-06-22 17:14:08')
+DEBUG 2014-06-22 17:14:08,716 util 9884 9868 (0.001) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, ps, {"data": "      PID    PPID    PGID     WINPID   TTY     UID    STIME COMMAND\n     9184       1    9184       9184  ?       1001 17:14:07 /usr/bin/ps\n"}, 2014-06-22 17:14:08); args=(1, u'ps', u'{"data": "      PID    PPID    PGID     WINPID   TTY     UID    STIME COMMAND\\n     9184       1    9184       9184  ?       1001 17:14:07 /usr/bin/ps\\n"}', u'2014-06-22 17:14:08')
+DEBUG 2014-06-22 17:16:09,878 util 9884 9868 (0.002) SELECT `deploy_host`.`id`, `deploy_host`.`hostname`, `deploy_host`.`username`, `deploy_host`.`version`, `deploy_host`.`tags`, `deploy_host`.`create_time` FROM `deploy_host` WHERE `deploy_host`.`id` = 1 ; args=(1,)
+DEBUG 2014-06-22 17:16:09,881 util 9884 9868 (0.002) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, load, {"lavg_5": "0.00", "lavg_15": "0.00", "lavg_1": "0.00"}, 2014-06-22 17:16:09); args=(1, u'load', u'{"lavg_5": "0.00", "lavg_15": "0.00", "lavg_1": "0.00"}', u'2014-06-22 17:16:09')
+DEBUG 2014-06-22 17:16:09,887 util 9884 9868 (0.001) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, memory, {"MemTotal": 8094, "Cached": 0, "SwapFree": 0, "LowTotal": 8094, "SwapTotal": 0, "MemFree": 4130, "HighTotal": 0, "Buffers": 0, "MemUsed": 3964, "HighFree": 0, "LowFree": 4130}, 2014-06-22 17:16:09); args=(1, u'memory', u'{"MemTotal": 8094, "Cached": 0, "SwapFree": 0, "LowTotal": 8094, "SwapTotal": 0, "MemFree": 4130, "HighTotal": 0, "Buffers": 0, "MemUsed": 3964, "HighFree": 0, "LowFree": 4130}', u'2014-06-22 17:16:09')
+DEBUG 2014-06-22 17:16:09,892 util 9884 9868 (0.002) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, ps, {"data": "      PID    PPID    PGID     WINPID   TTY     UID    STIME COMMAND\n    10200       1   10200      10200  ?       1001 17:16:08 /usr/bin/ps\n"}, 2014-06-22 17:16:09); args=(1, u'ps', u'{"data": "      PID    PPID    PGID     WINPID   TTY     UID    STIME COMMAND\\n    10200       1   10200      10200  ?       1001 17:16:08 /usr/bin/ps\\n"}', u'2014-06-22 17:16:09')
+DEBUG 2014-06-22 17:18:11,040 util 9884 9868 (0.003) SELECT `deploy_host`.`id`, `deploy_host`.`hostname`, `deploy_host`.`username`, `deploy_host`.`version`, `deploy_host`.`tags`, `deploy_host`.`create_time` FROM `deploy_host` WHERE `deploy_host`.`id` = 1 ; args=(1,)
+DEBUG 2014-06-22 17:18:11,049 util 9884 9868 (0.003) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, load, {"lavg_5": "0.00", "lavg_15": "0.00", "lavg_1": "0.00"}, 2014-06-22 17:18:11); args=(1, u'load', u'{"lavg_5": "0.00", "lavg_15": "0.00", "lavg_1": "0.00"}', u'2014-06-22 17:18:11')
+DEBUG 2014-06-22 17:18:11,062 util 9884 9868 (0.003) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, memory, {"MemTotal": 8094, "Cached": 0, "SwapFree": 0, "LowTotal": 8094, "SwapTotal": 0, "MemFree": 4169, "HighTotal": 0, "Buffers": 0, "MemUsed": 3925, "HighFree": 0, "LowFree": 4169}, 2014-06-22 17:18:11); args=(1, u'memory', u'{"MemTotal": 8094, "Cached": 0, "SwapFree": 0, "LowTotal": 8094, "SwapTotal": 0, "MemFree": 4169, "HighTotal": 0, "Buffers": 0, "MemUsed": 3925, "HighFree": 0, "LowFree": 4169}', u'2014-06-22 17:18:11')
+DEBUG 2014-06-22 17:18:11,075 util 9884 9868 (0.002) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, ps, {"data": "      PID    PPID    PGID     WINPID   TTY     UID    STIME COMMAND\n     9660       1    9660       9660  ?       1001 17:18:10 /usr/bin/ps\n"}, 2014-06-22 17:18:11); args=(1, u'ps', u'{"data": "      PID    PPID    PGID     WINPID   TTY     UID    STIME COMMAND\\n     9660       1    9660       9660  ?       1001 17:18:10 /usr/bin/ps\\n"}', u'2014-06-22 17:18:11')
+DEBUG 2014-06-22 17:20:12,253 util 9884 9868 (0.003) SELECT `deploy_host`.`id`, `deploy_host`.`hostname`, `deploy_host`.`username`, `deploy_host`.`version`, `deploy_host`.`tags`, `deploy_host`.`create_time` FROM `deploy_host` WHERE `deploy_host`.`id` = 1 ; args=(1,)
+DEBUG 2014-06-22 17:20:12,257 util 9884 9868 (0.003) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, load, {"lavg_5": "0.00", "lavg_15": "0.00", "lavg_1": "0.00"}, 2014-06-22 17:20:12); args=(1, u'load', u'{"lavg_5": "0.00", "lavg_15": "0.00", "lavg_1": "0.00"}', u'2014-06-22 17:20:12')
+DEBUG 2014-06-22 17:20:12,272 util 9884 9868 (0.002) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, memory, {"MemTotal": 8094, "Cached": 0, "SwapFree": 0, "LowTotal": 8094, "SwapTotal": 0, "MemFree": 4124, "HighTotal": 0, "Buffers": 0, "MemUsed": 3970, "HighFree": 0, "LowFree": 4124}, 2014-06-22 17:20:12); args=(1, u'memory', u'{"MemTotal": 8094, "Cached": 0, "SwapFree": 0, "LowTotal": 8094, "SwapTotal": 0, "MemFree": 4124, "HighTotal": 0, "Buffers": 0, "MemUsed": 3970, "HighFree": 0, "LowFree": 4124}', u'2014-06-22 17:20:12')
+DEBUG 2014-06-22 17:20:12,279 util 9884 9868 (0.002) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, ps, {"data": "      PID    PPID    PGID     WINPID   TTY     UID    STIME COMMAND\n      308       1     308        308  ?       1001 17:20:11 /usr/bin/ps\n"}, 2014-06-22 17:20:12); args=(1, u'ps', u'{"data": "      PID    PPID    PGID     WINPID   TTY     UID    STIME COMMAND\\n      308       1     308        308  ?       1001 17:20:11 /usr/bin/ps\\n"}', u'2014-06-22 17:20:12')
+DEBUG 2014-06-22 17:22:13,414 util 9884 9868 (0.001) SELECT `deploy_host`.`id`, `deploy_host`.`hostname`, `deploy_host`.`username`, `deploy_host`.`version`, `deploy_host`.`tags`, `deploy_host`.`create_time` FROM `deploy_host` WHERE `deploy_host`.`id` = 1 ; args=(1,)
+DEBUG 2014-06-22 17:22:13,415 util 9884 9868 (0.001) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, load, {"lavg_5": "0.00", "lavg_15": "0.00", "lavg_1": "0.00"}, 2014-06-22 17:22:13); args=(1, u'load', u'{"lavg_5": "0.00", "lavg_15": "0.00", "lavg_1": "0.00"}', u'2014-06-22 17:22:13')
+DEBUG 2014-06-22 17:22:13,424 util 9884 9868 (0.001) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, memory, {"MemTotal": 8094, "Cached": 0, "SwapFree": 0, "LowTotal": 8094, "SwapTotal": 0, "MemFree": 4136, "HighTotal": 0, "Buffers": 0, "MemUsed": 3958, "HighFree": 0, "LowFree": 4136}, 2014-06-22 17:22:13); args=(1, u'memory', u'{"MemTotal": 8094, "Cached": 0, "SwapFree": 0, "LowTotal": 8094, "SwapTotal": 0, "MemFree": 4136, "HighTotal": 0, "Buffers": 0, "MemUsed": 3958, "HighFree": 0, "LowFree": 4136}', u'2014-06-22 17:22:13')
+DEBUG 2014-06-22 17:22:13,428 util 9884 9868 (0.001) INSERT INTO `deploy_health` (`host_id`, `type`, `data`, `modify_time`) VALUES (1, ps, {"data": "      PID    PPID    PGID     WINPID   TTY     UID    STIME COMMAND\n     8244       1    8244       8244  ?       1001 17:22:12 /usr/bin/ps\n"}, 2014-06-22 17:22:13); args=(1, u'ps', u'{"data": "      PID    PPID    PGID     WINPID   TTY     UID    STIME COMMAND\\n     8244       1    8244       8244  ?       1001 17:22:12 /usr/bin/ps\\n"}', u'2014-06-22 17:22:13')
+WARNING 2014-06-22 17:23:42,576 base 8584 8488 Not Found: /login
+ERROR 2014-06-22 17:23:42,582 base 8584 8488 Internal Server Error: /login
+Traceback (most recent call last):
+  File "C:\Python26\lib\site-packages\django\core\handlers\base.py", line 150, in get_response
+    response = callback(request, **param_dict)
+  File "C:\Python26\lib\site-packages\django\utils\decorators.py", line 93, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python26\lib\site-packages\django\views\defaults.py", line 18, in page_not_found
+    t = loader.get_template(template_name) # You need to create a 404.html template.
+  File "C:\Python26\lib\site-packages\django\template\loader.py", line 157, in get_template
+    template, origin = find_template(template_name)
+  File "C:\Python26\lib\site-packages\django\template\loader.py", line 138, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: 404.html
+WARNING 2014-06-22 17:26:47,165 base 3940 10056 Not Found: /login
+ERROR 2014-06-22 17:26:47,174 base 3940 10056 Internal Server Error: /login
+Traceback (most recent call last):
+  File "C:\Python26\lib\site-packages\django\core\handlers\base.py", line 150, in get_response
+    response = callback(request, **param_dict)
+  File "C:\Python26\lib\site-packages\django\utils\decorators.py", line 93, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python26\lib\site-packages\django\views\defaults.py", line 18, in page_not_found
+    t = loader.get_template(template_name) # You need to create a 404.html template.
+  File "C:\Python26\lib\site-packages\django\template\loader.py", line 157, in get_template
+    template, origin = find_template(template_name)
+  File "C:\Python26\lib\site-packages\django\template\loader.py", line 138, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: 404.html
+ERROR 2014-06-22 17:39:40,584 base 7612 6932 Internal Server Error: /login
+Traceback (most recent call last):
+  File "C:\Python26\lib\site-packages\django\core\handlers\base.py", line 89, in get_response
+    response = middleware_method(request)
+  File "C:\Python26\lib\site-packages\django\contrib\sessions\middleware.py", line 12, in process_request
+    request.session = engine.SessionStore(session_key)
+  File "C:\Python26\lib\site-packages\django\contrib\sessions\backends\file.py", line 24, in __init__
+    " Django can store session data." % self.storage_path)
+ImproperlyConfigured: The session storage path 'F:\\workspace\\python\\deploy\\deployserver\\log\\session' doesn't exist. Please set your SESSION_FILE_PATH setting to an existing directory in which Django can store session data.
+ERROR 2014-06-22 17:39:42,203 base 7612 6932 Internal Server Error: /health
+Traceback (most recent call last):
+  File "C:\Python26\lib\site-packages\django\core\handlers\base.py", line 89, in get_response
+    response = middleware_method(request)
+  File "C:\Python26\lib\site-packages\django\contrib\sessions\middleware.py", line 12, in process_request
+    request.session = engine.SessionStore(session_key)
+  File "C:\Python26\lib\site-packages\django\contrib\sessions\backends\file.py", line 24, in __init__
+    " Django can store session data." % self.storage_path)
+ImproperlyConfigured: The session storage path 'F:\\workspace\\python\\deploy\\deployserver\\log\\session' doesn't exist. Please set your SESSION_FILE_PATH setting to an existing directory in which Django can store session data.
+WARNING 2014-06-22 17:39:42,206 csrf 7612 6932 Forbidden (No CSRF or session cookie.): /health
+ERROR 2014-06-22 17:39:45,733 base 7612 6932 Internal Server Error: /login
+Traceback (most recent call last):
+  File "C:\Python26\lib\site-packages\django\core\handlers\base.py", line 89, in get_response
+    response = middleware_method(request)
+  File "C:\Python26\lib\site-packages\django\contrib\sessions\middleware.py", line 12, in process_request
+    request.session = engine.SessionStore(session_key)
+  File "C:\Python26\lib\site-packages\django\contrib\sessions\backends\file.py", line 24, in __init__
+    " Django can store session data." % self.storage_path)
+ImproperlyConfigured: The session storage path 'F:\\workspace\\python\\deploy\\deployserver\\log\\session' doesn't exist. Please set your SESSION_FILE_PATH setting to an existing directory in which Django can store session data.
+WARNING 2014-06-22 17:39:45,736 csrf 7612 6932 Forbidden (CSRF cookie not set.): /login
+ERROR 2014-06-22 17:55:47,562 base 8348 8484 Internal Server Error: /login
+Traceback (most recent call last):
+  File "C:\Python26\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "F:/workspace/python/deploy/deployserver\deploy\views\page_views.py", line 62, in login
+    return HttpResponseRedirect(reverse('index'))
+  File "C:\Python26\lib\site-packages\django\core\urlresolvers.py", line 391, in reverse
+    *args, **kwargs)))
+  File "C:\Python26\lib\site-packages\django\core\urlresolvers.py", line 337, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for 'index' with arguments '()' and keyword arguments '{}' not found.
+WARNING 2014-06-22 17:55:47,572 csrf 8348 8484 Forbidden (CSRF cookie not set.): /login
+ERROR 2014-06-22 17:56:20,657 base 4640 9580 Internal Server Error: /login
+Traceback (most recent call last):
+  File "C:\Python26\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "F:/workspace/python/deploy/deployserver\deploy\views\page_views.py", line 62, in login
+    return HttpResponseRedirect(reverse(r'^index$'))
+  File "C:\Python26\lib\site-packages\django\core\urlresolvers.py", line 391, in reverse
+    *args, **kwargs)))
+  File "C:\Python26\lib\site-packages\django\core\urlresolvers.py", line 337, in reverse
+    "arguments '%s' not found." % (lookup_view_s, args, kwargs))
+NoReverseMatch: Reverse for '^index$' with arguments '()' and keyword arguments '{}' not found.
+WARNING 2014-06-22 17:56:20,664 csrf 4640 9580 Forbidden (CSRF cookie not set.): /login
+WARNING 2014-06-22 18:03:21,154 base 9544 8896 Not Found: /logout
+ERROR 2014-06-22 18:03:21,163 base 9544 8896 Internal Server Error: /logout
+Traceback (most recent call last):
+  File "C:\Python26\lib\site-packages\django\core\handlers\base.py", line 150, in get_response
+    response = callback(request, **param_dict)
+  File "C:\Python26\lib\site-packages\django\utils\decorators.py", line 93, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "C:\Python26\lib\site-packages\django\views\defaults.py", line 18, in page_not_found
+    t = loader.get_template(template_name) # You need to create a 404.html template.
+  File "C:\Python26\lib\site-packages\django\template\loader.py", line 157, in get_template
+    template, origin = find_template(template_name)
+  File "C:\Python26\lib\site-packages\django\template\loader.py", line 138, in find_template
+    raise TemplateDoesNotExist(name)
+TemplateDoesNotExist: 404.html
+ERROR 2014-06-22 18:03:29,517 base 7608 9948 Internal Server Error: /logout
+Traceback (most recent call last):
+  File "C:\Python26\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "F:/workspace/python/deploy/deployserver\deploy\views\page_views.py", line 67, in logout
+    del request.session['login']
+  File "C:\Python26\lib\site-packages\django\contrib\sessions\backends\base.py", line 54, in __delitem__
+    del self._session[key]
+KeyError: 'login'
+ERROR 2014-06-22 18:03:31,778 base 7608 9948 Internal Server Error: /logout
+Traceback (most recent call last):
+  File "C:\Python26\lib\site-packages\django\core\handlers\base.py", line 111, in get_response
+    response = callback(request, *callback_args, **callback_kwargs)
+  File "F:/workspace/python/deploy/deployserver\deploy\views\page_views.py", line 67, in logout
+    del request.session['login']
+  File "C:\Python26\lib\site-packages\django\contrib\sessions\backends\base.py", line 54, in __delitem__
+    del self._session[key]
+KeyError: 'login'
